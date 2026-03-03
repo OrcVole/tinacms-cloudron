@@ -30,9 +30,5 @@ fi
 chown -R cloudron:cloudron /app/data
 chown -R cloudron:cloudron /run/nextjs-cache
 
-# Index schema into MongoDB on startup
-echo "=> Indexing TinaCMS schema..."
-/usr/local/bin/gosu cloudron:cloudron node_modules/.bin/tinacms build --skip-cloud-checks --skip-index || echo "=> Schema indexing skipped (may index on first admin access)"
-
 echo "=> Starting on port ${PORT}"
 exec /usr/local/bin/gosu cloudron:cloudron node_modules/.bin/next start -p ${PORT} -H 0.0.0.0
