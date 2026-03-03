@@ -13,5 +13,8 @@
     "localstorage": {},
     "mongodb": {}
   },
-  "postInstallMessage": "Run: cloudron env --app editor.restorebritain.dev GITHUB_PERSONAL_ACCESS_TOKEN='ghp_...' GITHUB_OWNER='user' GITHUB_REPO='repo' GITHUB_BRANCH='main'"
+  "postInstallMessage": "Run: cloudron env --app editor.restorebritain.dev GITHUB_PERSONAL_ACCESS_TOKEN='ghp_...' GITHUB_OWNER='user' GITHUB_REPO='repo' GITHUB_BRANCH='main'",
+  "runtimeDirs": [
+    "/app/code/tina/__generated__"
+  ]
 }
