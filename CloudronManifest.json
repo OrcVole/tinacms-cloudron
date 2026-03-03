@@ -1,0 +1,17 @@
+{
+  "id": "dev.restorebritain.tinacms",
+  "title": "TinaCMS",
+  "author": "Restore Britain <admin@restorebritain.dev>",
+  "description": "Self-hosted TinaCMS content editor",
+  "tagline": "Visual content editing backed by Git",
+  "version": "1.0.0",
+  "healthCheckPath": "/api/health",
+  "httpPort": 8000,
+  "manifestVersion": 2,
+  "memoryLimit": 1073741824,
+  "addons": {
+    "localstorage": {},
+    "mongodb": {}
+  },
+  "postInstallMessage": "Run: cloudron env --app editor.restorebritain.dev GITHUB_PERSONAL_ACCESS_TOKEN='ghp_...' GITHUB_OWNER='user' GITHUB_REPO='repo' GITHUB_BRANCH='main'"
+}

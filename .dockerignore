@@ -1,0 +1,11 @@
+.git
+node_modules
+.next
+.env
+.env.*
+.DS_Store
+docker-compose*
+.pnpm-store
+.turbo
+coverage
+*.tgz
