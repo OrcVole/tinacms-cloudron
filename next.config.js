@@ -1,23 +1,9 @@
-module.exports = {
-  webpack(config) {
-    config.module.rules.push({
-      test: /\.svg$/i,
-      issuer: /\.[jt]sx?$/,
-      use: ["@svgr/webpack"],
-    });
-
-    return config;
+/** @type {import('next').NextConfig} */
+const nextConfig = {
+  experimental: {
+    esmExternals: true,
   },
-  async rewrites() {
-    return [
-      {
-        source: "/",
-        destination: "/home",
-      },
-      {
-        source: "/admin",
-        destination: "/admin/index.html",
-      },
-    ];
-  },
+  transpilePackages: ["mongodb-level"],
 };
+
+module.exports = nextConfig;

@@ -5,7 +5,8 @@
   "scripts": {
     "dev": "TINA_PUBLIC_IS_LOCAL=true tinacms dev -c \"next dev\"",
     "dev:prod": "TINA_PUBLIC_IS_LOCAL=false tinacms dev -c \"next dev\"",
-    "build": "tinacms build && next build", "build:next": "next build",
+    "build": "tinacms build && next build",
+    "build:next": "next build",
     "start": "next start",
     "lint": "next lint"
   },
@@ -33,5 +34,10 @@
     "tinacms-authjs": "^5.0.9",
     "tinacms-gitprovider-github": "^2.0.19",
     "typescript": "^5.9.3"
+  },
+  "pnpm": {
+    "overrides": {
+      "nanoid": "^3.3.7"
+    }
   }
 }

@@ -14,6 +14,7 @@ fi
 export NEXTAUTH_SECRET=$(cat /app/data/.nextauth_secret)
 
 export PORT=8000
+export NODE_OPTIONS="--experimental-require-module"
 export NODE_ENV=production
 export HOSTNAME="0.0.0.0"
 export NEXT_TELEMETRY_DISABLED=1

@@ -1,7 +1,7 @@
 {
-  "id": "dev.restorebritain.tinacms",
+  "id": "io.tinacms.cloudron",
   "title": "TinaCMS",
-  "author": "Restore Britain <admin@restorebritain.dev>",
+  "author": "TinaCMS Cloudron Packager",
   "description": "Self-hosted TinaCMS content editor",
   "tagline": "Visual content editing backed by Git",
   "version": "1.0.0",
@@ -13,7 +13,7 @@
     "localstorage": {},
     "mongodb": {}
   },
-  "postInstallMessage": "Run: cloudron env --app editor.restorebritain.dev GITHUB_PERSONAL_ACCESS_TOKEN='ghp_...' GITHUB_OWNER='user' GITHUB_REPO='repo' GITHUB_BRANCH='main'",
+  "postInstallMessage": "Run: cloudron env --app editor.example.com GITHUB_PERSONAL_ACCESS_TOKEN='ghp_...' GITHUB_OWNER='user' GITHUB_REPO='repo' GITHUB_BRANCH='main'",
   "runtimeDirs": [
     "/app/code/tina/__generated__"
   ]

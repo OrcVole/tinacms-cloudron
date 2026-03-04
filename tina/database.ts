@@ -1,5 +1,6 @@
 import { createDatabase, createLocalDatabase } from "@tinacms/datalayer";
-import { MongodbLevel } from "mongodb-level";
+// @ts-ignore - pre-bundled CJS version to avoid ESM issues
+import { MongodbLevel } from "./mongodb-level-bundled.cjs";
 import { GitHubProvider } from "tinacms-gitprovider-github";
 
 const isLocal = process.env.TINA_PUBLIC_IS_LOCAL === "true";

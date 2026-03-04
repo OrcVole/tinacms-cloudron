@@ -1,9 +1,10 @@
 FROM docker.io/cloudron/base:4.2.0
 
-RUN curl -fsSL https://deb.nodesource.com/setup_20.x | bash - \
-    && apt-get install -y nodejs \
-    && npm install -g pnpm@latest \
-    && rm -rf /var/cache/apt/archives /var/lib/apt/lists/*
+RUN npm install -g n && n 22 && rm -rf /usr/local/node-18.18.0
+
+ENV PATH="/usr/local/bin:/usr/local/sbin:/usr/sbin:/usr/bin:/sbin:/bin"
+
+RUN node --version && npm install -g pnpm@latest
 
 RUN mkdir -p /app/code
 WORKDIR /app/code
