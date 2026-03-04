@@ -22,7 +22,7 @@
   },
   "dependencies": {
     "@tinacms/cli": "^1.12.6",
-    "@tinacms/datalayer": "^1.4.3",
+    "@tinacms/datalayer": "^2.0.12",
     "mongodb-level": "^0.0.4",
     "next": "14.2.35",
     "next-auth": "^4.24.13",
